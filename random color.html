@@ -1,0 +1,120 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button{
+        margin: 0;
+        padding: 0;
+        border-radius: 2px;
+    }
+</style>
+<body>
+    
+    <h1>hii</h1>
+    <button id="color">click me</button>
+
+    <script>
+    function random_bg_color() {
+        var x = Math.floor(Math.random() * 256);
+        var y = Math.floor(Math.random() * 256);
+        var z = Math.floor(Math.random() * 256);
+        var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+     //console.log(bgColor);
+        bgColor.innerHTML;
+        document.body.style.background = bgColor;
+        color.addEventListener("click",random_bg_color);
+        }
+    
+    random_bg_color();
+</script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .tile {
+            height: 100px;
+            width: 20%;
+            float: left;
+            border-radius: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+    </div>
+
+    
+    <script>
+        function random(number) {
+            return Math.floor(Math.random() * number);
+        }
+
+        function bgChange() {
+            const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+            return rndCol;
+        }
+
+        const container = document.querySelector('#container');
+
+
+
+
+        container.addEventListener('mouseover', (event) => event.target.style.backgroundColor = bgChange());
+
+
+
+      /*  a.forEach(function(r){
+            r.onmouseover=function(e){
+             e.target.style.backgroundColor=bgChange;
+            }
+        })
+ 
+         document.getElementById('container').onmouseover = function(mohit){
+                     
+             event.target.style.backgroundColor = bgChange();
+         }  */
+ 
+ 
+
+    </script>
+
+</body>
+
+</html>

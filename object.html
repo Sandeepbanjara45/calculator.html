@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="demo">looping object property value</p>
+    <script>
+        let x="";
+        let l = [
+
+{ f_name: "mohit", l_name: "sharma", address: "jaipur" },
+
+{ f_name: "rohit", l_name: "soni", address: "udipur" },
+
+{ f_name: "aman", l_name: "sharma", address: "kota" },
+
+{
+    cars:
+        [
+            { name: "Ford", models: ["Fiesta", "Focus", "Mustang"] },
+
+            { name: "BMW", models: ["320", "X3", "X5"] },
+
+            { name: "Fiat", models: ["500", "Panda"] }
+        ]
+}
+];
+//console.log(l[3].cars[2].models)
+
+for(let i of l[3].cars){
+    console.log(i.models[1]);
+}
+
+for(let s of l[1]){
+    console.log(s.address[1])
+}
+
+
+
+
+
+// var txt=" ";
+// for(let i in l){
+//     txt+=l[i] + " ";
+// }
+// document.getElementById("demo").innerHTML=txt;
+
+
+ const persons=[
+    {name:"sandeep",
+    age:21},
+    {name:"ram",
+    age:22},
+    
+    {name:"shyam",
+    age:19},
+    
+    {name:"ronak",
+    age:16},
+    
+    {name:"sk",
+    age:17},
+    
+    {name:"jubbin",
+    age:21},
+    
+    {name:"mohit",
+    age:24},
+    
+    {name:"robin",
+    age:20},
+    
+    {name:"sankit",
+     age:15},
+
+     {name:"rahul",
+      age:14},
+];
+let age=persons.filter((persons) => {
+            return persons.age>18;
+        });
+        console.log();
+
+
+
+//    const     myObj = {
+//                 name:"John",
+//                 age:30,
+//                 cars: {
+//                         car1:"Ford",
+//                         car2:"BMW",
+//                         car3:"Fiat"
+//                      }
+// }
+
+//         console.log(myObj.cars.car2);
+//         console.log(myObj.cars["car3"]);
+//         console.log(myObj["cars"]["car1"]);
+
+
+
+    </script>
+</body>
+</html>

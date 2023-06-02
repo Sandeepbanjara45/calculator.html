@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    
+    <script>
+
+const persons = [
+  {firstname : "Malcom", lastname: "Reynolds"},
+  {firstname : "Kaylee", lastname: "Frye"},
+  {firstname : "Jayne", lastname: "Cobb"}
+];
+document.getElementById("demo").innerHTML=persons.map(function(item){
+    return [item.firstname,item.lastname].join(" ");
+});
+
+
+const v = [
+{key:1,value:10},
+{key:2,value:20},
+{key:3,value:30},
+{key:4,value:40},
+];
+var t = v.map(({key,value}) => ({
+    [key]:value
+}));
+console.log(t);
+
+let f1=(a,b)=>{
+var a=10;
+var b=20;
+var c=a+b;
+return c;
+}
+let d=f1();
+console.log(d);
+
+let arr = [45,23,21];
+
+let a=arr.map((value,index,array)=>{
+    console.log(value,index,array)
+    return value>24;
+})
+console.log(a);
+
+
+
+    </script>
+</body>
+</html>

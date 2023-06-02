@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // const arr=[1,5,10,20,8,7,15];
+
+        
+
+        // function func1(value){
+        //     return value<10;
+        // }
+
+        // const func3=(value)=>value<10;
+
+        // const newArr=arr.filter(func3);
+        
+        // const res = func3(11);
+        // console.log(res);
+        // console.log(newArr)
+
+
+        // const arr3 = [{name:"sam",age:12},{name:"ram",age:17}]
+        // const fl=arr3.filter((value)=>value.age>15)
+        // console.log(fl);
+        // console.log(arr3)
+
+        // const arr1 = [1,2,5,8,15]
+        // console.log(arr1);
+        // arr1[3]=7;
+        // console.log(arr1)
+
+        const obj2 = {name:"xyz",age:13}
+        console.log(obj2.name)
+        obj2.name='pqr'
+        obj2.canvote=true;
+        console.log(obj2)
+
+
+        // const arr = [{name:'xyz',age:14},{name:'abc',age:19}];
+        // const newArr = arr.map((value)=>{
+        //     if(value.age<18){
+        //         value.canvote=false;
+        //     }else{
+        //         value.canvote=true;
+        //     }
+        //     return value;
+        // })
+        // console.log(newArr);
+
+        const stuObj =[ {name:'Ram',age:19,rollNo:101,english:49,hindi:48,math:45},
+                        {name:'Shyam',age:16,rollNo:102,english:47,hindi:46,math:41},
+                        {name:'sunny',age:17,rollNo:103,english:48,hindi:45,math:43},
+                        {name:'Rocky',age:19,rollNo:104,english:47,hindi:43,math:40},
+                        {name:'Sam',age:18,rollNo:105,english:46,hindi:41,math:42},
+                        {name:'Prashant',age:16,rollNo:106,english:45,hindi:48,math:47},
+                        {name:'vishal',age:18,rollNo:107,english:44,hindi:47,math:43},
+                        {name:'Rohit',age:19,rollNo:108,english:43,hindi:49,math:45},
+                        {name:'Mohit',age:17,rollNo:109,english:42,hindi:44,math:48},
+                        {name:'Ravan',age:16,rollNo:110,english:41,hindi:42,math:49},
+    ]
+                       
+
+        const newStu = stuObj.map((value)=>{
+            
+            value.total=value.english+value.hindi+value.math;
+            return value;
+        })
+        console.log(newStu)
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="put">
+    
+    <button id="btn">submit</button>
+    <button id="p">print</button>
+    
+    <script>
+        // setInterval(() => {
+        //     console.log("Hello!")
+        // }, 1000);
+
+        let b = []
+        document.getElementById('btn').onclick=function(){
+            var a = document.getElementById('put').value;
+
+            b.push(a)
+            console.log(b)
+
+         let m =  document.getElementById('p').onclick=function(){
+
+            
+                 
+                    i=0;
+
+                    if(i==b.length){
+
+                        clearInterval(m);
+                    }
+                    else{
+
+                        setInterval(function(){
+                        document.write(b[i++])
+                        console.log(b.length)
+                    },1000)
+
+                    }
+             
+            }
+            
+        }
+        
+    </script>
+</body>
+</html>

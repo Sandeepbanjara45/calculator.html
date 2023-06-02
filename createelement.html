@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>The document object model</h1>
+    <h2> crete element() method</h2>
+     <p>create button element</p> 
+    <div id="myDiv" style="background-color: lightgray;font-size: 30px;" >a Div element</div> -->
+
+    <input type="text" id="ip">
+    <button id="btn">click me</button>
+
+    <script>
+        // const btn=document.createElement("button");
+        // btn.innerHTML="submit";
+        // document.body.appendChild(btn);
+
+
+        // const para=document.createElement("p");
+        // para.innerHTML="this is a paragraph";
+        // document.getElementById("myDiv").appendChild(para)
+
+        let b=[];
+        document.getElementById('btn').onclick=function(){
+            var a=document.getElementById('ip').value;
+             b.push(a);
+            document.write(b);
+        }
+    </script>
+</body>
+</html>

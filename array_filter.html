@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1> filter practice</h1>
+
+    <script>
+        const characters=[
+            {
+                name:"sandeep",
+                age:22,
+                height:156,
+                gender:"male",
+                eye_color:"blue"
+            },
+            {
+                name:"manish",
+                age:22,
+                height:160,
+                gender:"male",
+                eye_color:"brown",
+            },
+            {
+                name:"joyti",
+                age:20,
+                height:165,
+                gender:"female",
+                eye_color:"green",
+            },
+            {
+                name:"sonam",
+                age:23,
+                height:162,
+                gender:"female",
+                eye_color:"blue",
+            },
+            {
+                name:"rani",
+                age:19,
+                height:150,
+                gender:"female",
+                eye_color:"green",
+            },
+        ];
+        //find height
+        let graterHeight=characters.filter((characters) => {
+            return characters.height>160;
+        });
+        console.log(graterHeight);
+
+        //find eye color
+        let ec=characters.filter((characters) => {
+            return characters.eye_color === 'brown';
+        });
+        console.log(ec);
+
+        //find gender
+        let findGender = characters.filter((characters) => {
+            return characters.gender === 'male';
+        });
+        console.log(findGender);
+
+        //find age
+        let findAge = characters.filter((characters) => {
+            return characters.age<21;
+        });
+        console.log(findAge);
+
+
+        let arr2 = [45,23,21,0,3,5];
+        let a2 = arr2.filter((value)=>{
+            return value<10
+        })
+        console.log(a2);
+
+        //reduce method
+        let arr3=[1,2,3,5,2,1];
+        let v=arr3.reduce((h1,h2)=>{
+            return h1+h2;
+        })
+        console.log(v);
+
+        //reduce method with function
+        let arr4=[1,2,3,5,2,1];
+        const reduce_func = (h1,h2) => {
+            return h1+h2;
+        }
+        let newarr4 = arr4.reduce(reduce_func);
+        console.log(newarr4)
+    </script>
+</body>
+</html>

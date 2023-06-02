@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            color: red;
+            font-size: 50px;
+        }
+
+        .red {
+            color: blue;
+            opacity: 0.12;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        //right half pattern
+        // for(let i=1;i<=5;i++){
+        //     for(let j=1;j<=5;j++){
+        //         document.write("*")
+        //     }
+        //     document.write("<br>")
+        // }
+
+        //left half pattern
+        // let i,j,k,x=5;
+        // for(i=1;i<=x;i++){
+
+        //     for(k=1;k<=x-i;k++){
+        //         //document.write("&nbsp;&nbsp;");
+        //         document.write("<span class='red'>*</span>");
+        //     }
+
+        //     for(j=1;j<=i;j++){
+        //         document.write("*");
+        //     }
+        //     document.write("<br/>");
+        // }
+
+
+        //full pramid
+        // let i,j,k,l;
+        // for(i=1;i<=5;i++){
+
+        //     for(k=1;k<=5-i;k++){
+        //         document.write("&nbsp;&nbsp");
+        //     }
+
+        //     for(j=1;j<=i;j++){
+        //         document.write("*");
+        //     }
+
+        //     for(l=2;l<=i;l++){
+        //         document.write("*");
+        //     }
+        //     document.write("<br/>");
+        // }
+
+
+
+        // for(let i=0;i<5;i++){
+        //     for(let j=0;j<5-i;j++){
+        //         document.write("&nbsp;&nbsp;");
+        //     }
+        //     for(let k=0;k<=i;k++){
+        //         document.write("*");
+        //     }
+        //     document.write("<br/>");
+        // }
+
+
+        //E alfabate
+        // let a=10;
+        // for(let i=1;i<a;i++){
+        //     for(let j=1;j<a;j++){
+        //         //document.write("*")
+        //         if(i==1||j==0||i==9||j==5||i==a/2){
+        //             document.write("*")
+        //         }
+        //     }
+        //     document.write("<br/>");
+        // }
+
+        //F alfabate
+        // let a=10;
+        // for(let i=0;i<a;i++){
+        //     for(let j=0;j<a;j++){
+        //         //document.write("*")
+        //         if(i==0||j==0||i==a/2){
+        //             document.write("*")
+        //         }
+        //     }
+        //     document.write("<br/>");
+        // }
+
+        //B alfabate
+        let a = 10;
+        for (let i = 0; i <= a; i++) {
+            for (let j = 0; j <= a; j++) {
+                if (i == 0 || j == 0 || j==a) {
+                    document.write("*")
+                }
+                else{
+                     
+                    for (let i = 0; i <= 100; i++) {
+                        
+                        
+                        console.log("")
+                    }
+                }
+            }
+            document.write("<br/>");
+        }
+
+    </script>
+</body>
+
+</html>

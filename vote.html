@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statment</title>
+    </head>
+<body>
+    <h1>My Resume</h1>
+    <h1>hello</h1>
+    <h2></h2>
+    <button>Try it</button>
+
+
+
+<script>
+    let age = prompt('Enter Your Age: ');
+   document.querySelector("button").onclick =  function(){
+        if(age>=18){
+            document.querySelector('h2').innerHTML="You can vote";
+        }
+        else{
+             document.querySelector('h2').innerHTML="You can not vote";
+        }
+    }
+    
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>this is javascript page.</h1>
+
+  <input type="text" id="m">
+  <input type="text" id="n">
+  <button id="btn">click me</button>
+  <script>
+    document.getElementById("btn").onclick=function(){
+      var a=document.getElementById("m").value;
+      var b = document.getElementById("n").value;
+      // console.log(a);
+
+      if(a>b){
+        console.log("a ",a);
+      }
+      else{
+        console.log("b ",b);
+      }
+
+      // for(var i=1;i<a;i++)
+      // {
+      //   for(var j=1;j<i;j++){
+      //     document.write("*");
+          
+      //   }
+      //   document.write("<br/>");
+        
+      // }
+    }
+  
+  </script>
+</body>
+</html>

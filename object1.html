@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object1</title>
+</head>
+<body>
+    <h1>object1 in js</h1>
+    <p id="demo"></p>
+
+    <script>
+        // var user={
+        //     id:101,
+        //     email:"abc@gmail.com",
+        //     personalInfo:{
+        //         name:"sandeep",
+        //         address:{
+        //             street:"kuch bi",
+        //             city:"jaipur",
+        //             country:"india",
+        //         }
+        //     }
+        // }
+        // console.log(user.personalInfo.address.city);
+
+        // var a = {
+        //     fname:"sandeep",
+        //     lname:"banjara",
+        //     age:21,
+        //     email:"sk@gmail.com",
+        //     favmovie:['Dhoom','sholay','hum'],
+        //     living : {
+        //         city:'chandigarh',
+        //         country:'India',
+        //     },
+        //     salary : function(){
+        //         return 25000;
+        //     },
+        //     fullname : function(){
+        //         return this.fname + " " + this.lname;
+        //     }
+        // }
+        // console.log(a);
+        // document.write(a.living.country);
+
+        // const arr4=[1,2,3,4,5];
+        // let c = arr4.reduce(function(m1,m2){
+        //     return m1+m2;
+        // })
+        // console.log(c);
+        
+        // const vehicalOne = {
+        //     brand:"ford",
+        //     type:"car",
+        //     model:"mustang",
+        //     color:"red",
+        //     year:2021,
+        //     registration :{
+        //         city:"Houtan",
+        //         state:"Taxas",
+        //         Country:"USA",
+        //     },
+        // }
+
+        // myVehicals(vehicalOne);
+
+        // function myVehicals({model,registration:{state}}){
+        //     const message = 'my ' +model+ ' is registring in ' +state+ '-';
+
+        //     document.getElementById('demo').innerHTML=message;
+        // }
+
+       const number = [12,33,44,55,66];
+       number.forEach(myFunction)
+
+       function myFunction(item,index,arr){
+        arr[index]=item*10;
+    
+       }
+       document.getElementById("demo").innerHTML=number;
+
+
+
+       let sum=0;
+       const number1 = [1,2,3,4,5];
+       number1.forEach(myFunction1)
+
+       function myFunction1(item){
+        return sum+=item;
+       }
+       document.getElementById("demo").innerHTML=sum;
+
+
+       let text = '';
+       const fruits = ["apple","orange","banana"];
+       fruits.forEach(myFunction2)
+
+       function myFunction2(item,index){
+        text+=index + ":" +item+ "<br>";
+       }
+       document.getElementById("demo").innerHTML=text;
+    </script>
+</body>
+</html>

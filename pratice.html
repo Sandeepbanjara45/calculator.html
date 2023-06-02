@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="put">
+    <button id="btn">submit</button>
+
+    <script>
+document.getElementById('btn').onclick=function(){
+var a=document.getElementById('put').value;
+    //fibonachhi seri
+        var b=0;
+        var c=1;
+        for(let i=2;i<=a;i++){
+            var temp=b+c;
+            console.log(temp);
+            b=c;
+            c=temp;
+        }
+    }
+
+    var flag=0;
+    for(var i=2;i<a;i++){
+        if(a%i==0){
+            flag=1;
+        }
+    }
+    if(flag==1){
+        console.log("non prime number");
+    }else{
+        console.log("prime no");
+    }
+
+array_Clone = function(arra1) {
+ return arra1.slice(0);
+    };
+console.log(array_Clone([1, 2, 4, 0]));
+console.log(array_Clone([1, 2, [4, 0]]));
+
+
+const a = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]];
+for(var i in a){
+    console.log(`row ${i}`);
+    for(var j in a[i]){
+        console.log(`${a[i][j]}`)
+    }
+}
+    </script>
+</body>
+</html>
