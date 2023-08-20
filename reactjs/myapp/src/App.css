@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.imgc{
+  background-color: palevioletred;
+  padding: 15px;
+  height: 35vh;
+  display: flex;
+  justify-content: space-evenly;  
+}
+.heading{
+  text-align: center;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.zoom {
+  padding: 2px;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}

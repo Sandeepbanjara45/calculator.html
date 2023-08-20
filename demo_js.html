@@ -9,6 +9,8 @@
 <body>
     <h1>This is a javaScript page.</h1>
 
+    <input type="text" id="m">
+    <button id="btn">click me</button>
      <script>
      //var a=10;
         // a=20;
@@ -63,6 +65,20 @@
         
         let g;
         console.log(g)
+
+
+        document.getElementById("btn").onclick=function(){
+            let a = document.getElementById("m").value;
+            if(a>=18)
+            console.log("you can vote")
+            else if(a>15&&a<18)
+            console.log("you can eligible of half vote")
+            else if(a<15)
+            console.log("next time better luck");
+        }
+
+
+        
     </script>
 
 </body>

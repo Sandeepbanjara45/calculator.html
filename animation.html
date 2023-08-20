@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .a{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            background-color: red;
+            /* transition: all 8s; */
+            animation-name: sam;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+         .a:hover{
+        /*    background-color: blue;
+            height: 500px;
+            width: 500px;
+            border-radius: 300px; */
+
+            
+        } 
+        @keyframes sam{
+            form{
+                width: 100px;
+            }
+            to{
+                width: 800px;
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h3>transition property</h3>
+    <div class="c">box</div>
+
+
+    <div class="a">
+        animation
+    </div>
+    
+</body>
+</html>

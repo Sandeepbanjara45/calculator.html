@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+*{
+  background-color: palevioletred;
+  text-align: center;
+}
+button{
+  background-color: aqua;
+  border-radius: 20%;
+  margin-top: 3%;
+}
+input{
+  border: 2px solid black;
+  margin-top: 3%;
+  text-align: center;
+}
+

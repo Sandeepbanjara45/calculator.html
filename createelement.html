@@ -25,12 +25,25 @@
         // para.innerHTML="this is a paragraph";
         // document.getElementById("myDiv").appendChild(para)
 
-        let b=[];
-        document.getElementById('btn').onclick=function(){
-            var a=document.getElementById('ip').value;
-             b.push(a);
-            document.write(b);
+        // let b=[];
+        // document.getElementById('btn').onclick=function(){
+        //     var a=document.getElementById('ip').value;
+        //      b.push(a);
+        //     document.write(b);
+        // }
+        document.querySelector("button").onclick = function(){
+            let a = document.querySelector("input").value;
+
+            let b = document.createElement("p");
+            b.innerHTML = a;
+
+            document.body.appendChild(b);
+            document.querySelector("input").value =" ";
+            document.querySelector("input").focus()
+            
         }
+
+
     </script>
 </body>
 </html>
